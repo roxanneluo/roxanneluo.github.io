@@ -60,72 +60,29 @@
 							<!-- Post -->
 								<article class="box post">
 									<header>
-										<h2>Behold! This is the <strong>no sidebar</strong> layout<br />
-										with no sidebar at all!</h2>
-									</header>
-									<span class="image featured"><img src="images/pic04.jpg" alt="" /></span>
-									<h3>And yeah, that's basically it</h3>
-									<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-									ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-									sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-									in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-									magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-									mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-									Curabitur leo nibh, rutrum eu malesuada in, tristique at erat.</p>
-									<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat
-									Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula
-									vel quam viverra sit amet mollis tortor congue. Sed quis mauris sit amet
-									magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in,
-									tristique at erat. Curabitur leo nibh, rutrum eu malesuada  in, tristique
-									at erat lorem ipsum dolor sit amet lorem ipsum sed consequat magna
-									tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat
-									magna tempus</p>
-									<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-									ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-									sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-									in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-									magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-									mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-									Curabitur leo nibh, rutrum eu malesuada in, tristique at erat.</p>
-									<h3>Accumsan lorem ipsum veroeros</h3>
-									<p>Consequat Phasellus laoreet massa id in, tristique at erat lorem
-									ipsum dolor sit amet lorem ipsum sed consequat magna tempus veroeros
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-									mollis tortor congue. Sed quis mauris sit amet magna.</p>
-									<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-									ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-									sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-									in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-									magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-									mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-									Curabitur leo nibh, rutrum eu malesuada in, tristique at erat.</p>
-									<h3>Ligula suspcipit fusce veroeros</h3>
-									<p>Nullam dolore etiam sed massa id in, tristique at erat lorem
-									ipsum dolor sit amet lorem ipsum sed consequat magna tempus veroeros
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-									mollis tortor congue. Sed quis mauris sit amet magna.</p>
-									<p>Sed massa id justo mattis pharetra. Fusce suscipit
-									ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-									sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-									in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-									magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-									mollis tortor congue. Sed quis mauris sit amet magna accumsan.</p>
+												<h2>Authoring A Tutorial</h2>
+											</header>
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/68WWIwrYvJs" frameborder="0" allowfullscreen></iframe>
+											<br><br><br>
+									<h3>Paper Mock Up of Tutorial Authroing</h3>
+									<p>This week we mocked up the interface for authoring a tutorial. This video shows the creation of a step. There are a number of interfaces shown. For a detailed </p>
+									<p>Tutorial Menu -- The user can pick the tutorial they are working on.</p>
+									<p>Step List -- Shows an overview of the steps.</p>
+									<p>Actions -- Shows users possible voice commands.</p>
+									<p>Step Creation -- Users can input step info.</p>
+									<p>Checklist Creation -- Users can say text input and segment into steps.</p>
+								</article>
+								
+							<!-- Post -->
+								<article class="box post">
+								<br>
+									<header>
+												<h2>Experiancing A Tutorial</h2>
+											</header>
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/Euayxck05vc" frameborder="0" allowfullscreen></iframe>
+											<br><br><br>
+									<h3>Paper Mock Up of Watching a Tutorial</h3>
+									<p>This week we mocked up the interface for viewing a tutorial.</p>
 								</article>
 
 						</div>
