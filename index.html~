@@ -30,7 +30,7 @@
 								<ul>
 									<li><a class="icon fa-home" href="index.html"><span>Introduction</span></a></li>
 									<li>
-										<a href="https://docs.google.com/document/d/1Xg8Z5kkbLyIBLd0SSGU_E57vHW-aLNpCtIW0RY3DBe8/edit?usp=sharing" class="icon fa-bar-chart-o"><span>PRD</span></a>
+										<a href="https://docs.google.com/document/d/1Ib8lxELAezwl9gkGXfWPwzj5AWynd66T8UrM6tD3VM0/edit?usp=sharing" class="icon fa-bar-chart-o"><span>PRD</span></a>
 									</li>
 									<!--
 									<li>
@@ -136,6 +136,11 @@
 											<p>
 											How-To is a platform that makes creating effective tutorials for the HoloLens easy. This is accomplished by using the HoloLens for content creation. The HoloLens captures point-of-view video, which naturally requires instructors to include the motions and perspectives viewers need to put themselves in the place of the instructor and reproduce their actions. While capturing video, the field of view is visible so instructors can easily compose shots hands free. Holograms used for instruction are also recorded. The provided speech recognition and spatial information, can be used to name places and tutorial steps. This can be used for tutorial navigation and locating the viewer’s videos. Instructors get real time feedback so mistakes can be addressed immediately. Additional features such as some very basic editing tools may be added. Videos could be shortened by either cutting or speed up, and step indicators added or removed. We will foster a growing knowledge base around physical interactions.
 											</p>
+											<header>
+												<h2>Experiancing A Tutorial</h2>
+											</header>
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/Euayxck05vc" frameborder="0" allowfullscreen></iframe>
+											<br><br><br>
 											<header>
 											<h2> Project Details and Features</h2>
 											</header>
