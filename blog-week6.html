@@ -48,31 +48,19 @@
 									<header>
 												<h2>Introduction</h2>
 											</header>
-										<p>The goal this week is to be able to reigster places and play/pause videos. We also plan to test out shooting different 3D videos at Microsoft to evaluate what works best on their vido capture rig.</p>
+										<p>The goal this week is to have a basic .</p>
 				
 									<header>
 										<h2>Progresss</h2>
 									</header>
-										<p>We have done the following things. </p>
-										<ul>
-											<li>Set up the skeleton code. (Xuan) </li>
-											<li>Implemented the cursor and GazeGuesture. (Xuan) </li>
-											<li>Importing playable video into unity. (Griffin)</li>
-											<li>We can now play/pause/stop videos by voice control and airtap. (Xuan)</li>
-											<li>Spatial registration for kitchen places and gadgets (e.g. sink, fridge, oven, etc) is working. The user can now look around his/her environment and an object follows the gaze and the user can register a mesh as a place. (JJ) </li>
-											<li>StepManager to mange the step flow is also implemented (Xuan). But we still need to put the StepManager and SpatialRegistration step together (Xuan & JJ).</li>
-											<li>Working on saving and loading tutorial objects to and from disk using iserializable. (Griffin)</li>
-										</ul>
-										<a href="#" class="image center"><img src="images/3dvideotodo.jpg" alt="" /></a>
+										<p>(Griffin) I stopped working on serialization to help with video recording. I have the basics of serialization working but this task needs to be completed on a per object basis and many of our objects are not complete. For video playback, I configured unity to include webcam libraries to enable camera use. There are however there are issues with video playback. HoloLens captures h264 while unity only supports OGG. For now we are going to take a picture representing the video while editing, and have an offline manual conversion. In the future a server could hold and convert these, but that’s not the current focus.</p>
+										<p>(Xuan) I implemented TextFeature and show/hide action list in the base class Feature so that actionList should be able to show/hide for all features.</p>
 									<header>
 										<h2>Plan for Next Week</h2>
 									</header>
+									    <p>Our target demo for next week is to have an actual recipe working with multiple steps and places to register. Steps should hold a video or optionally other items.</p>
 										<ul>
-											<li>Implement the action List to let users know what voice actions are available to different features. (Xuan) </li>
-											<li>Put StepManager and SpatialRegistration step toegether. (Xuan & JJ)</li>
-											<li>Implement checklist. (Xuan & JJ) </li>
-											<li>Continuing to work on saving and loading tutorial objects to disk. Goal is to have a loadable tutorial by this demo period. (Griffin)</li>
-											<li>Implement Warning (JJ) </li>
+											<li>I will work on creating a checklist object. (Griffin)</li>
 										</ul>
 								
 								</article>
