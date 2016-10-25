@@ -1,24 +1,18 @@
 /*
-	Strongly Typed by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
 (function($) {
 
-	skel
-		.breakpoints({
-			desktop: '(min-width: 737px)',
-			tablet: '(min-width: 737px) and (max-width: 1200px)',
-			mobile: '(max-width: 736px)'
-		})
-		.viewport({
-			breakpoints: {
-				tablet: {
-					width: 1080
-				}
-			}
-		});
+	skel.breakpoints({
+		xlarge:	'(max-width: 1680px)',
+		large:	'(max-width: 1280px)',
+		medium:	'(max-width: 980px)',
+		small:	'(max-width: 736px)',
+		xsmall:	'(max-width: 480px)'
+	});
 
 	$(function() {
 
@@ -29,48 +23,33 @@
 			$body.addClass('is-loading');
 
 			$window.on('load', function() {
-				$body.removeClass('is-loading');
+				window.setTimeout(function() {
+					$body.removeClass('is-loading');
+				}, 100);
 			});
 
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
 
-		// Prioritize "important" elements on mobile.
-			skel.on('+mobile -mobile', function() {
+		// Prioritize "important" elements on medium.
+			skel.on('+medium -medium', function() {
 				$.prioritize(
-					'.important\\28 mobile\\29',
-					skel.breakpoint('mobile').active
+					'.important\\28 medium\\29',
+					skel.breakpoint('medium').active
 				);
-			});
-
-		// CSS polyfills (IE<9).
-			if (skel.vars.IEVersion < 9)
-				$(':last-child').addClass('last-child');
-
-		// Dropdowns.
-			$('#nav > ul').dropotron({
-				mode: 'fade',
-				noOpenerFade: true,
-				hoverDelay: 150,
-				hideDelay: 350
 			});
 
 		// Off-Canvas Navigation.
 
-			// Title Bar.
-				$(
-					'<div id="titleBar">' +
-						'<a href="#navPanel" class="toggle"></a>' +
-					'</div>'
-				)
+			// Navigation Panel Toggle.
+				$('<a href="#navPanel" class="navPanelToggle"></a>')
 					.appendTo($body);
 
 			// Navigation Panel.
 				$(
 					'<div id="navPanel">' +
-						'<nav>' +
-							$('#nav').navList() +
-						'</nav>' +
+						$('#nav').html() +
+						'<a href="#navPanel" class="close"></a>' +
 					'</div>'
 				)
 					.appendTo($body)
@@ -80,14 +59,12 @@
 						hideOnSwipe: true,
 						resetScroll: true,
 						resetForms: true,
-						side: 'left',
-						target: $body,
-						visibleClass: 'navPanel-visible'
+						side: 'left'
 					});
 
-			// Fix: Remove navPanel transitions on WP<10 (poor/buggy performance).
+			// Fix: Remove transitions on WP<10 (poor/buggy performance).
 				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
-					$('#titleBar, #navPanel, #page-wrapper')
+					$('#navPanel')
 						.css('transition', 'none');
 
 	});
