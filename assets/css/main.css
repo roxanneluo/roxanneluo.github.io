@@ -116,7 +116,7 @@
 		.container.\31 25\25 {
 			width: 100%;
 			max-width: 81.25em;
-			min-width: 65em;
+			min-width: 55em;
 		}
 
 		.container.\37 5\25 {
@@ -132,7 +132,7 @@
 		}
 
 		.container {
-			width: 65em;
+			width: 55em;
 		}
 
 	}
@@ -2350,16 +2350,21 @@
 			top: 0.25em;
 		}
 
-		#banner span.image.right img {
+		.image.photo img {
+			position: relative;
+			margin-top: 50%;
+			margin-bottom: -50%;
 			/*max-width: 200px;*/
 			border: 10px solid white;
 			border-radius: 50%;
 		    width: 	100%;/*280px;*/
 		    /*height: 200px;*/
 			float: right;
+			z-index: 1;
 			/*float: center;*/
-			margin: -3em 10em -15em 0em;
+			/*margin: -3em 10em -15em 0em;*/
 		}
+
 		.image.right {
 			float: right;
 			margin: 0 0 1em 1.5em;
@@ -2534,7 +2539,7 @@
 	}
 
 	section .inner {
-		max-width: 65em;
+		max-width: 55em;
 		width: calc(100% - 6em);
 		margin: 0 auto;
 	}
@@ -3091,7 +3096,7 @@
 		@media screen and (max-width: 1280px) {
 
 			.wrapper > .inner {
-				width: 65em;
+				width: 55em;
 			}
 
 		}
@@ -3126,7 +3131,7 @@
 	}
 
 		#header .inner {
-			max-width: 65em;
+			max-width: 55em;
 			width: calc(100% - 6em);
 			margin: 0 auto;
 			position: relative;
@@ -3377,7 +3382,7 @@
 	#banner {
 		background-color: #e5474b;
 		color: #f2a3a5;
-		padding: 13em 0 11em 0;
+		/*padding: 13em 0 11em 0;*/
 		background-color: #0c0c0c;
 		background-image: url("../../images/banner.jpg");
 		background-size: cover;
@@ -3386,6 +3391,8 @@
 		text-align: left;
 		position: relative;
 		z-index: 9999;
+		/*min-height: 20em; */
+		/*z-index: 1;*/
 	}
 
 		#banner input, #banner select, #banner textarea {
@@ -3502,7 +3509,7 @@
 		}
 
 		#banner .inner {
-			max-width: 65em;
+			max-width: 55em;
 			width: calc(100% - 6em);
 			margin: 0 auto;
 			position: relative;
@@ -3538,7 +3545,7 @@
 		@media screen and (max-width: 1680px) {
 
 			#banner {
-				padding: 10em 0 8em 0;
+				/*padding: 10em 0 8em 0;*/
 			}
 
 		}
@@ -3546,7 +3553,7 @@
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				padding: 8em 0 6em 0;
+				/*padding: 8em 0 6em 0;*/
 			}
 
 		}
@@ -3554,7 +3561,7 @@
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				padding: 12em 0 10em 0;
+				/*padding: 12em 0 10em 0;*/
 			}
 
 				#banner br {
@@ -3566,7 +3573,7 @@
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 4em 0 2em 0;
+				/*padding: 4em 0 2em 0;*/
 			}
 
 				#banner h1 {
@@ -3578,7 +3585,7 @@
 		@media screen and (max-width: 480px) {
 
 			#banner {
-				padding: 5em 0 3em 0;
+				/*padding: 5em 0 3em 0;*/
 			}
 
 				#banner ul {
@@ -4034,7 +4041,7 @@
 		}
 
 		#footer .inner {
-			max-width: 65em;
+			max-width: 55em;
 			width: calc(100% - 6em);
 			margin: 0 auto;
 		}
@@ -4072,4 +4079,23 @@
 				padding: 2em 0 0.1em 0;
 			}
 
+		}
+
+		.video {
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 */
+			width: 100%;
+			padding-top: 25px;
+			height: 0;
+			margin-top: 2em;
+		}
+		.video iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		p {
+			text-align: justify;
 		}
