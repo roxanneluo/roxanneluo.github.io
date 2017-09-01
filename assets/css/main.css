@@ -3162,6 +3162,12 @@
 			font-weight: normal;
 			padding: 0;
 		}
+		#header .logo .chinese {
+			font-family: STXingkai, 'Microsoft Yahei', '微软雅黑', 'Hiragino Sans GB', Helvetica, Arial, sans-serif;
+			font-weight: bold;
+			margin-left: 0.3em;
+			font-size: 0.9em;
+		}
 
 			#header .logo:hover {
 				color: rgba(229, 71, 75, 0.75);
