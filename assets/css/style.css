@@ -1,0 +1,463 @@
+/* ==========================================================================
+   Xuan Luo — personal academic site
+   Modern, dependency-free stylesheet (no jQuery/skel required)
+   ========================================================================== */
+
+:root {
+  --ink: #1f2937;
+  --ink-soft: #4b5563;
+  --ink-faint: #6b7280;
+  --accent: #1d4ed8;
+  --accent-soft: #eff6ff;
+  --gold: #b45309;
+  --gold-soft: #fffbeb;
+  --line: #e5e7eb;
+  --bg: #ffffff;
+  --bg-alt: #f9fafb;
+  --radius: 10px;
+  --max-width: 60rem;
+  --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 1.0rem;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.25;
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+section {
+  scroll-margin-top: 4.5rem;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* --------------------------------------------------------------------------
+   Header / navigation
+   -------------------------------------------------------------------------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  min-height: 3.5rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.brand:hover { text-decoration: none; }
+
+.brand .zh {
+  font-weight: 400;
+  color: var(--ink-faint);
+  margin-left: 0.4rem;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+}
+
+.site-nav a {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------
+   Hero / about
+   -------------------------------------------------------------------------- */
+
+.hero {
+  padding: 3.5rem 0 2.5rem;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.portrait img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(31, 41, 55, 0.16);
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.1rem;
+}
+
+.hero h1 .zh {
+  font-weight: 400;
+  color: var(--ink-faint);
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.hero .role {
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+  margin: 0 0 1rem;
+}
+
+.hero .role a { font-weight: 500; }
+
+.hero p {
+  margin: 0 0 0.9rem;
+  color: var(--ink-soft);
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.contact-row .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.42rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  background: var(--bg);
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+
+.contact-row .btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  text-decoration: none;
+}
+
+.contact-row .btn.primary {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.contact-row .btn.primary:hover {
+  background: #1e40af;
+}
+
+.email-note {
+  margin-top: 0.9rem;
+  font-size: 0.92rem;
+  color: var(--ink-faint);
+}
+
+/* --------------------------------------------------------------------------
+   Sections
+   -------------------------------------------------------------------------- */
+
+.section {
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.section.alt {
+  background: var(--bg-alt);
+}
+
+.section-title {
+  font-size: 1.45rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-note {
+  font-size: 0.88rem;
+  color: var(--ink-faint);
+  margin-top: 1.25rem;
+}
+
+/* --------------------------------------------------------------------------
+   Publication / project entries
+   -------------------------------------------------------------------------- */
+
+.pub {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  padding: 1.25rem 0;
+}
+
+.pub + .pub {
+  border-top: 1px solid var(--line);
+}
+
+.pub-thumb img,
+.pub-thumb video {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.pub-title {
+  font-size: 1.08rem;
+  margin-bottom: 0.15rem;
+}
+
+.pub-title a { color: var(--ink); }
+.pub-title a:hover { color: var(--accent); text-decoration: none; }
+
+.pub-venue {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 0.35rem;
+}
+
+.pub-venue a { color: inherit; }
+
+.pub-authors {
+  font-size: 0.94rem;
+  color: var(--ink-soft);
+  margin: 0 0 0.6rem;
+}
+
+.pub-authors .me { font-weight: 700; color: var(--ink); }
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.pub-links a {
+  display: inline-block;
+  padding: 0.22rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+
+.pub-links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  text-decoration: none;
+}
+
+.pub-extra {
+  font-size: 0.9rem;
+  color: var(--ink-faint);
+  margin: 0.6rem 0 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.12rem 0.6rem;
+  margin-left: 0.15rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  vertical-align: 0.12rem;
+}
+
+.badge.award {
+  color: var(--gold);
+  background: var(--gold-soft);
+  border: 1px solid #fde68a;
+}
+
+.badge.oral {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid #bfdbfe;
+}
+
+/* --------------------------------------------------------------------------
+   Education
+   -------------------------------------------------------------------------- */
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.edu-card {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg);
+}
+
+.edu-card img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.edu-card h3 {
+  font-size: 1rem;
+  margin: 0 0 0.15rem;
+}
+
+.edu-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  background: var(--bg-alt);
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+.site-footer h2 {
+  font-size: 1.3rem;
+}
+
+.site-footer p {
+  color: var(--ink-soft);
+  margin: 0.25rem 0 1.25rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.42rem 0.95rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  background: var(--bg);
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 760px) {
+  .hero { padding-top: 2.25rem; }
+
+  .hero .container {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .portrait {
+    max-width: 240px;
+  }
+
+  .pub {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+
+  .pub-thumb {
+    max-width: 360px;
+  }
+
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+}
